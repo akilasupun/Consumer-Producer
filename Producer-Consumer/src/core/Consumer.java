@@ -15,14 +15,16 @@ public class Consumer implements Runnable {
 					try {
 						System.out.println("Consumer calling wait() cause table is empty!");
 
-						notifyAll();
-						// this.wait();
-						Thread.sleep(100);
+						// this.notify();
+						this.wait();
+						// Thread.sleep(100);
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}
 				}
+
 			}
+
 		}
 	}
 }

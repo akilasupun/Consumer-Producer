@@ -16,6 +16,5 @@ public class Application {
 		prodcucerThread.start();
 		consumerThread.start();
 
-		new Consumer().run();
 	}
 }
